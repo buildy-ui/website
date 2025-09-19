@@ -21,7 +21,9 @@
     "baseUrl": ".",
     "paths": {
       "@ui8kit/core": ["./packages/@ui8kit/core/src"],
-      "@ui8kit/core/*": ["./packages/@ui8kit/core/src/*"]
+      "@ui8kit/core/*": ["./packages/@ui8kit/core/src/*"],
+      "@ui8kit/blocks": ["./packages/@ui8kit/blocks/src"],
+      "@ui8kit/blocks/*": ["./packages/@ui8kit/blocks/src/*"]
     }
   },
   "exclude": ["node_modules", "dist", "build"]

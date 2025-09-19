@@ -1,10 +1,34 @@
 import { Block, Container, Button, Title, Text, Stack } from '@ui8kit/core'
 import { ThemeProvider, useTheme, lesseUITheme } from '@ui8kit/core' // skyOSTheme, modernUITheme, lesseUITheme
 
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
+// Blocks
+"use client";
+import {
+  Rendery,
+  createHeroRegistry,
+  SplitHeroPreset
+} from "@ui8kit/blocks";
+
+export const TestBlocksPage = () => {
+  
+  const heroRegistry = createHeroRegistry();
+
+  const simpleHeroPreset = SplitHeroPreset.find(preset => preset.variant === "gallery");
+
+  const blocksTree = simpleHeroPreset ? [simpleHeroPreset] : [];
+
+  return (
+    <Rendery registry={heroRegistry as any} tree={blocksTree} />
+  );
+};
+
 function AppContent() {
   const { toggleDarkMode, isDarkMode } = useTheme()
 
   return (
+    <>
     <Block variant="section" py="xl">
       <Container>
       <Stack gap="lg" align="center" ta="center">
@@ -16,6 +40,9 @@ function AppContent() {
         </Stack>
       </Container>
     </Block>
+    <TestBlocksPage />
+    <SpeedInsights />
+    </>
   )
 }
 
