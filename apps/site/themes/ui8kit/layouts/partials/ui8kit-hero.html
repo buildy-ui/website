@@ -1,0 +1,16 @@
+{{/* Simple Hugo partial that renders hero section based on front matter */}}
+{{ $badge := .Params.badge }}
+{{ $title := .Title }}
+{{ $description := .Params.description }}
+
+<section class="hero" style="padding:4rem 0;">
+  <div class="container">
+    {{ if $badge }}
+      <div class="badge">{{ $badge }}</div>
+    {{ end }}
+    <h1>{{ $title }}</h1>
+    {{ with $description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+

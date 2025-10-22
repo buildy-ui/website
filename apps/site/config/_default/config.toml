@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "ru-ru"
+title = "UI8Kit Hugo Site"
+paginate = 10
+theme = "ui8kit"
+
+

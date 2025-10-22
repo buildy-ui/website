@@ -1,0 +1,8 @@
+name = "ui8kit"
+license = "GPL-3.0"
+min_version = "0.120.0"
+
+[author]
+  name = "buildy"
+  homepage = "https://ui.buildy.tw"
+

@@ -1,0 +1,11 @@
+{
+  "name": "@ui8kit/site",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --minify"
+  }
+}
+
+

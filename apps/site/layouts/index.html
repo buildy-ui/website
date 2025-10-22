@@ -1,0 +1,14 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "main" }}
+  {{ partial "ui8kit-hero.html" . }}
+  <section>
+    <h2>Блог</h2>
+    <ul>
+      {{ range (where .Site.RegularPages "Section" "blog") | first 5 }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+
+
