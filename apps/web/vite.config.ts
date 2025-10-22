@@ -17,6 +17,14 @@ export default defineConfig(({ mode }) => {
         '@ui8kit/blocks': path.resolve(__dirname, '../../packages/@ui8kit/blocks/src')
       }
     },
-    server: { port: 5000 }
+    server: {
+      port: 5000,
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3001',
+          changeOrigin: true
+        }
+      }
+    }
   }
 })

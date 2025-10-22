@@ -1,0 +1,21 @@
+{
+  "name": "@ui8kit/api",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "preview": "nitro preview"
+  },
+  "dependencies": {
+    "h3": "^1.12.0",
+    "nitropack": "^2.9.7",
+    "unenv": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
+
+
