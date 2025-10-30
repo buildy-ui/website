@@ -2,8 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{ts,tsx}",
-    "../../packages/@ui8kit/core/src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx,json}"
   ],
   darkMode: 'class',
   theme: {
