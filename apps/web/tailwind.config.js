@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss3').Config} */
 export default {
   content: [
-    "./src/lib/core-classes.json",
     "./index.html",
-    "./src/**/*.{ts,tsx}",
-    /* "../../node_modules/@ui8kit/core/dist" */
+    "./src/**/*.{json,ts,tsx}"
   ],
   darkMode: 'class',
   theme: {
