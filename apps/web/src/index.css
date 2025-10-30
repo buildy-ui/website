@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,9 +36,7 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 87.8431%;
     --sidebar-ring: 187.4739 173.4032% 31.3580%;
-    --font-sans: Outfit, sans-serif;
-    --font-serif: Roboto, sans-serif;
-    --font-mono: Fira Code, monospace;
+    --font-sans: Nunito, sans-serif;
     --radius: 0.625rem;
     --shadow-2xs: 0 0 25px 5px hsl(0 0% 0% / 0.01);
     --shadow-xs: 0 0 25px 5px hsl(0 0% 0% / 0.01);
@@ -87,9 +83,7 @@
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 20%;
     --sidebar-ring: 189.9661 161.8632% 27.5935%;
-    --font-sans: Outfit, sans-serif;
-    --font-serif: Roboto, sans-serif;
-    --font-mono: Fira Code, monospace;
+    --font-sans: Nunito, sans-serif;
     --radius: 0.625rem;
     --shadow-2xs: 0 0 25px 5px hsl(0 0% 0% / 0.01);
     --shadow-xs: 0 0 25px 5px hsl(0 0% 0% / 0.01);
@@ -100,44 +94,6 @@
     --shadow-xl: 0 0 25px 5px hsl(0 0% 0% / 0.01), 0 8px 10px 4px hsl(0 0% 0% / 0.01);
     --shadow-2xl: 0 0 25px 5px hsl(0 0% 0% / 0.03);
   }
-}
-
-/* Hide scrollbar but keep functionality */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE/Edge legacy */
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-.supports-scrollbars:where([data-scrollbars="none"]) {
-  scrollbar-width: none;
-}
-
-.supports-scrollbars:where([data-scrollbars="none"])::-webkit-scrollbar {
-  display: none;
-}
-
-@supports (scrollbar-width: none) {
-  /* Firefox */
-  .scrollbar-hide {
-    scrollbar-width: none;
-  }
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 ::-webkit-scrollbar {

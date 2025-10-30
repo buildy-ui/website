@@ -10,7 +10,7 @@ function AppContent() {
     <Block variant="section" py="xl">
       <Container>
         <Stack gap="lg" align="center" ta="center">
-          <Title size="4xl">Welcome to UI8Kit</Title>
+          <Title size="4xl" fw="bold">Welcome to UI8Kit</Title>
           <Text>Create beautiful web applications with ease using our UI components</Text>
           <Button variant={isDarkMode ? 'primary' : 'secondary'} onClick={toggleDarkMode}>
             {!isDarkMode ? '🌙 Dark Mode' : '☀️ Light Mode'}

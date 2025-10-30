@@ -3,7 +3,7 @@ export default {
   content: [
     "./src/lib/core-classes.json",
     "./index.html",
-    "./src/**/*.{js,ts,tsx}",
+    "./src/**/*.{ts,tsx}",
     /* "../../node_modules/@ui8kit/core/dist" */
   ],
   darkMode: 'class',
